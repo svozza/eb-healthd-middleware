@@ -1,0 +1,44 @@
+{
+  "name": "eb-healthd-middleware",
+  "version": "1.0.0",
+  "description": "Middleware for enhanced health reporting in Elastic Beanstalk",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run flow",
+    "test": "istanbul cover _mocha test --recursive",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+  },
+  "keywords": [
+    "elastic beanstalk",
+    "aws",
+    "logging",
+    "beanstalk",
+    "health",
+    "healthd",
+    "eb",
+    "amazon",
+    "middleware",
+    "express",
+    "restify"
+  ],
+  "author": "Stefano Vozza",
+  "license": "ISC",
+  "dependencies": {
+    "on-finished": "2.3.0",
+    "request-ip": "1.2.3",
+    "streamroller": "0.3.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.x",
+    "express": "4.14.x",
+    "flow-bin": "0.37.x",
+    "istanbul": "0.4.x",
+    "mocha": "3.2.x",
+    "mock-fs": "3.12.x",
+    "mockdate": "2.0.x",
+    "restify": "4.3.x",
+    "rewire": "2.5.x",
+    "sinon": "1.17.x",
+    "supertest": "2.0.x"
+  }
+}
