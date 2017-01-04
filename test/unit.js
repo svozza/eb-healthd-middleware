@@ -13,7 +13,7 @@ describe('unit tests', () => {
         const logger = require('../lib/logger');
 
         it('should log in the appropriate format', () => {
-            const expected = '123.566"/test"200"7.14"7.14"10.0.0.1';
+            const expected = '123.566"/test"200"7.14"7.14"10.0.0.1\n';
             const actual = logger(123.566, '/test', 200, 7.14, '10.0.0.1');
             assert.strictEqual(actual, expected);
         });
