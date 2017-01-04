@@ -10,6 +10,10 @@ This repo will detail those steps and provide Node.js middleware for
 [Restify](http://restify.com/) and [Express](http://expressjs.com/) to 
 aid in logging appropriately.
 
+## Install
+
+`npm install eb-healthd-middleware --save`
+
 ## Setup
 
 The first step is to create an `.ebextensions` folder that is uploaded
