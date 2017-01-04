@@ -18,10 +18,11 @@ aid in logging appropriately.
 
 The first step is to create an `.ebextensions` folder that is uploaded
 in the same zip archive as your `Dockerrun.aws.json` file. Place the
-following yaml file in `.ebextensions` ensuring the placeholder is 
-replaced with the name of the container to be monitored. This
-informs the health monitoring agent as to where to find the logs on the 
-host and also sets up a Cron job to periodically delete rotated logs.
+following yaml file (named `01-nginx-healthd.config`) in `.ebextensions` 
+ensuring the placeholder is replaced with the name of the container to 
+be monitored. This informs the health monitoring agent as to where to 
+find the logs on the host and also sets up a Cron job to periodically 
+delete rotated logs.
 
 ```yaml
 files:
