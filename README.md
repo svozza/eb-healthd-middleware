@@ -1,7 +1,7 @@
 # eb-healthd-middleware
 
-When running Elastic Beanstalk in multi-container Docker mode then 
-enhanced health reporting does not work out of the box. There are 
+When running Elastic Beanstalk in multi-container Docker mode the very 
+useful enhanced health reporting does not work out of the box. There are 
 several steps to configure it correctly and unfortunately they are not
 located in one document. Specifically, it requires one's application to 
 log information about requests in a [particular format and location][1].
@@ -14,10 +14,10 @@ aid in logging appropriately.
 
 The first step is to create an `.ebextensions` folder that is uploaded
 in the same zip archive as your `Dockerrun.aws.json` file. Place the
-following yaml file in `.ebextensions` ensuring that you replace the
-placeholder with the name of the container you wish to monitor. This
+following yaml file in `.ebextensions` ensuring the placeholder is 
+replaced with the name of the container to be monitored. This
 informs the health monitoring agent as to where to find the logs on the 
-host and also set up a Cron job to periodically delete rotated logs.
+host and also sets up a Cron job to periodically delete rotated logs.
 
 ```yaml
 files:

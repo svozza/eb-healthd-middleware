@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+test/
+.idea/
+*.iml
+.gitignore
+.flowconfig
