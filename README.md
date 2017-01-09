@@ -12,6 +12,8 @@ aid in logging appropriately.
 
 ## Install
 
+This module will only work with versions of Node 4 and above:
+
 `npm install eb-healthd-middleware --save`
 
 ## Setup
