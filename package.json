@@ -1,6 +1,6 @@
 {
   "name": "eb-healthd-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware for enhanced health reporting in Elastic Beanstalk",
   "main": "index.js",
   "repository": {
@@ -25,6 +25,9 @@
     "express",
     "restify"
   ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "author": "Stefano Vozza",
   "license": "ISC",
   "dependencies": {
