@@ -33,7 +33,7 @@
   "dependencies": {
     "on-finished": "2.3.0",
     "request-ip": "1.2.3",
-    "streamroller": "0.3.0"
+    "streamroller": "2.2.2"
   },
   "devDependencies": {
     "chai": "3.5.x",
